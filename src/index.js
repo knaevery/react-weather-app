@@ -12,6 +12,9 @@ root.render(
       <h1>Weather Search</h1>
       <WeatherSearch />
     </div>
+    <footer class="App">
+      Take a look on <a href="https://github.com/knaevery/react-weather-app">GitHub</a>
+    </footer>
   </React.StrictMode>
 );
 

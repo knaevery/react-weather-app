@@ -2,19 +2,23 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
 import reportWebVitals from "./reportWebVitals";
 import WeatherSearch from "./Weather";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div class="App">
-      <h1>Weather Search</h1>
-      <WeatherSearch />
+    <div className="App">
+      <div className="container">
+        <h1>Weather Search</h1>
+        <WeatherSearch />
+      </div>
+      <footer class="App">
+        Take a look on{" "}
+        <a href="https://github.com/knaevery/react-weather-app">GitHub</a>
+      </footer>
     </div>
-    <footer class="App">
-      Take a look on <a href="https://github.com/knaevery/react-weather-app">GitHub</a>
-    </footer>
   </React.StrictMode>
 );
 

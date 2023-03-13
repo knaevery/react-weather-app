@@ -4,19 +4,15 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 import reportWebVitals from "./reportWebVitals";
 import WeatherSearch from "./Weather";
+import WeatherEngine from "./WeatherEngine";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div className="App">
       <div className="container">
-        <h1>Weather Search</h1>
-        <WeatherSearch />
+        <WeatherEngine />
       </div>
-      <footer class="App">
-        Take a look on{" "}
-        <a href="https://github.com/knaevery/react-weather-app">GitHub</a>
-      </footer>
     </div>
   </React.StrictMode>
 );
